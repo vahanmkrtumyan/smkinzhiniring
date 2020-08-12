@@ -18,8 +18,10 @@ const ComingSoon01 = () => {
       <div
         className="cs-01-page-wrapper h-100 bg-img d-flex flex-column justify-content-between"
         style={{
-          backgroundImage: `url(${process.env.PUBLIC_URL +
-            "/assets/img/backgrounds/coming-soon-01.jpg"})`
+          backgroundImage: `url(${
+            process.env.PUBLIC_URL +
+            "/assets/img/backgrounds/coming-soon-01.jpg"
+          })`,
         }}
       >
         {/*====================  header ====================*/}
@@ -28,7 +30,7 @@ const ComingSoon01 = () => {
             <div className="row">
               <div className="col-4">
                 {/* logo */}
-                <div className="cs-01-logo">
+                {/* <div className="cs-01-logo">
                   <Link to={process.env.PUBLIC_URL + "/"}>
                     <img
                       src={
@@ -38,7 +40,7 @@ const ComingSoon01 = () => {
                       alt=""
                     />
                   </Link>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -49,22 +51,34 @@ const ComingSoon01 = () => {
           <div className="container">
             <div className="row">
               <div className="col-lg-8">
-                <h3 className="cs-01-content__subtitle space-mb--10">
-                  Coming Soon
-                </h3>
-                <h2 className="cs-01-content__title">
-                  We are building <br /> something awesome!!
+                <h2
+                  className="cs-01-content__title"
+                  style={{ fontSize: "40px" }}
+                >
+                  Website is being redesigned
+                </h2>
+                <h2
+                  className="cs-01-content__title"
+                  style={{ fontSize: "40px" }}
+                >
+                  Сайт в стадии редизайна
+                </h2>
+                <h2
+                  className="cs-01-content__title"
+                  style={{ fontSize: "40px" }}
+                >
+                  Վեբ կայքը վերափոխվում է
                 </h2>
                 {/* countdown */}
                 <div className="cs-01-countdown space-mt--50">
                   <Countdown
-                    date={new Date("July 07, 2020 12:12:00")}
+                    date={new Date("August 28, 2020 12:12:00")}
                     renderer={Renderer}
                   />
                 </div>
                 <div className="cs-01-subscription-wrapper space-mt--50">
                   {/* subscribe email */}
-                  <SubscribeEmail mailchimpUrl="https://devitems.us11.list-manage.com/subscribe/post?u=6bbb9b6f5827bd842d9640c82&amp;id=05d85f18ef" />
+                  {/* <SubscribeEmail mailchimpUrl="https://devitems.us11.list-manage.com/subscribe/post?u=6bbb9b6f5827bd842d9640c82&amp;id=05d85f18ef" /> */}
                 </div>
               </div>
             </div>
@@ -77,7 +91,7 @@ const ComingSoon01 = () => {
             <div className="row align-items-center">
               <div className="col-12 col-md-6">
                 {/* social icons */}
-                <ul className="cs-01-social-icons d-flex align-items-center justify-content-center justify-content-md-start">
+                {/* <ul className="cs-01-social-icons d-flex align-items-center justify-content-center justify-content-md-start">
                   <li>
                     <a
                       href="http://www.facebook.com"
@@ -148,11 +162,11 @@ const ComingSoon01 = () => {
                       />
                     </a>
                   </li>
-                </ul>
+                </ul> */}
               </div>
               <div className="col-12 col-md-6">
                 {/* copyright */}
-                <div className="cs-01-copyright text-right">
+                {/* <div className="cs-01-copyright text-right">
                   &copy; {new Date().getFullYear() + " "}
                   <a
                     href="https://hasthemes.com/"
@@ -162,7 +176,7 @@ const ComingSoon01 = () => {
                     HasThemes
                   </a>
                   , all rights reserved
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
